@@ -20,6 +20,7 @@ export class SearchComponent implements OnInit {
   searchHero(){
     this.searchValue = this.searchMarvel
     this.searchString.emit(this.searchValue);
+    this.searchMarvel = "";
   }
 
 }
