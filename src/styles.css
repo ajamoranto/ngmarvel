@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */  
+  p {
+    display: none;
+  }
+  
+  .thumbnail>img {
+    width: 310px;
+    height: 310px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
