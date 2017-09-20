@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   }
 
   getDataFromSearch(searchValue){
-
+    //if statement to check if search if blank or not. if blank, do regular get to pull first 50
     if (searchValue != "") {
       var heroSearchString = "&nameStartsWith=" + searchValue;
       this.marvelService.searchHeroes(heroSearchString)

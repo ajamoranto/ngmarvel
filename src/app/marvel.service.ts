@@ -12,7 +12,7 @@ export class MarvelService {
   constructor(private http: Http) { }
   
     getHeroes(): Observable<any> {
-  
+      //added 50 character limit to base url
       return this.http.get(this.baseUrl + "&limit=50")
         .map(result => {
           return result.json()
@@ -21,7 +21,7 @@ export class MarvelService {
     }
 
     searchHeroes(heroSearchString): Observable<any> {
-      
+          //adding search string to base url which contains 'startswith'
           return this.http.get(this.baseUrl + heroSearchString)
             .map(result => {
               return result.json()
